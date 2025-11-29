@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="35.512" tests="3" skipped="0" failures="2" errors="0" timestamp="2025-11-29T06:54:13.055594900Z">
+<testcase classname="Login Functionality" name="To Verify Login functionality by entering valid credentials" time="17.092">
+<system-out><![CDATA[
+Given User has launched the browser and launched the applicationn...........passed
+When User enters valid email idd............................................passed
+And User enters valid passwordd.............................................passed
+And User clicks on Login buttonn............................................passed
+Then User should be Loginedd................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration Functionality" name="To verify Registration functionality by entering valid credentials" time="4.413">
+<failure type="java.lang.AssertionError" message="expected [Your Account Has Been Created!] but found [Register Account]">
+<![CDATA[java.lang.AssertionError: expected [Your Account Has Been Created!] but found [Register Account]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at pentalifepro.TC_RF_001.user_should_be_registeredd(TC_RF_001.java:88)
+	at ✽.User should be Registeredd(file:///C:/Users/Divya/Documents/workspace-spring-tools-for-eclipse-4.32.2.RELEASE/Pentalife/futurefile/resigstrestionpenta.feature:16)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User has opened the browser and launched the applicationn.............passed
+When User enters valid First namee..........................................passed
+And User enters valid Last namee............................................passed
+And User enters valid Email IDD.............................................passed
+And User enters valid Telephonee............................................passed
+And User enters valid Passwordd.............................................passed
+And User enters valid Confirm Passwordd.....................................passed
+And User clicks on radion button noo........................................passed
+And User clicks on privacy policy checkboxx.................................passed
+And User cliks on continue buttonn..........................................passed
+Then User should be Registeredd.............................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Verify search functionality" time="13.73">
+<failure type="java.lang.AssertionError" message="expected [Search - mac] but found [Search - samsung]">
+<![CDATA[java.lang.AssertionError: expected [Search - mac] but found [Search - samsung]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at pentalifepro.searchpenta.user_should_see_the_searched_product_displayedd(searchpenta.java:57)
+	at ✽.User should see the searched product displayedd(file:///C:/Users/Divya/Documents/workspace-spring-tools-for-eclipse-4.32.2.RELEASE/Pentalife/futurefile/search.feature:10)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User has logged inn...................................................passed
+When User logs in...........................................................passed
+And User enters a valid product name in the search boxx.....................passed
+And User clicks on search buttonss..........................................passed
+Then User should see the searched product displayedd........................failed
+]]></system-out>
+</testcase>
+</testsuite>
